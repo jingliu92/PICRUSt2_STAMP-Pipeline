@@ -12,3 +12,6 @@ vi ~/.bash_profile (press enter, press DD, delete all lines. Press ESC, then Shi
 ```
 
 picrust2_pipeline.py -s /Users/jingliu1/Desktop/phD/NE_model/Inbred_Data_Analysis/Qiime2/rep_seqs/dna-sequences.fasta -i /Users/jingliu1/Desktop/phD/NE_model/Inbred_Data_Analysis/feature_table/feature_table.txt -o /Users/jingliu1/Desktop/phD/NE_model/Inbred_Data_Analysis/Picrust --threads 8
+
+picrust2_pipeline.py -s Qiime2/rep_seqs/dna-sequences.fasta -i feature_table/feature_table.txt \
+    -o picrust3 -p 8
