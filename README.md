@@ -67,5 +67,13 @@ add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
                     -o pathways_out/path_abun_unstrat_descrip.tsv.gz
 ```
 
-# Visualising PICRUSt2 output in STAMP (Statistical Analysis of Metagenomic Profiles)
+# Visualising PICRUSt2 output in STAMP 
+
+## Intall STAMP on MacOS
+```
+conda deactivate
+conda install -c bioconda stamp
+```
+Type `stamp` on terminal to start STAMP
+
 
