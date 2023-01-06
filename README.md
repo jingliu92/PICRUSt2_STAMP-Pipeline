@@ -1,4 +1,6 @@
 # PICRUSt2-Pipeline
+Flowchart
+![image](https://user-images.githubusercontent.com/100873921/210913670-b41bc185-d372-45f7-ad2e-0ef5a97c9bf5.png)
 
 # Installation
 ```
@@ -25,4 +27,28 @@ The pipeline will generate metagenome predictions for 16S rRNA gene data. The in
 picrust2_pipeline.py -s Qiime2/rep_seqs/dna-sequences.fasta -i feature_table/feature_table.txt -o picrust3 -p 8
 ```
 
+# The key output files are:
+
+1. `EC_metagenome_out` - Folder containing unstratified EC number metagenome predictions (pred_metagenome_unstrat.tsv.gz), sequence table normalized by predicted 16S copy number abundances (seqtab_norm.tsv.gz), and the per-sample NSTI values weighted by the abundance of each ASV (weighted_nsti.tsv.gz).
+2. `KO_metagenome_out` - As EC_metagenome_out above, but for KO metagenomes.
+3. `pathways_out` - Folder containing predicted pathway abundances and coverages per-sample, based on predicted EC number abundances.
+
+# Enzyme Commission(EC) number
+The Enzyme Commission number (EC number) is a numerical classification scheme for enzymes, based on the chemical reactions they catalyze.[1] As a system of enzyme nomenclature, every EC number is associated with a recommended name for the corresponding enzyme-catalyzed reaction.
+
+EC numbers do not specify enzymes but enzyme-catalyzed reactions. If different enzymes (for instance from different organisms) catalyze the same reaction, then they receive the same EC number.
+
+# KO (KEGG ORTHOLOGY)
+The KO (KEGG Orthology) database is a database of molecular functions represented in terms of functional orthologs.
+
+KEGG PATHWAY is a collection of manually drawn pathway maps representing our knowledge of the molecular interaction, reaction and relation networks for:
+1. Metabolism
+    Global/overview   Carbohydrate   Energy   Lipid   Nucleotide   Amino acid   Other amino   Glycan
+    Cofactor/vitamin   Terpenoid/PK   Other secondary metabolite   Xenobiotics   Chemical structure
+2. Genetic Information Processing
+3. Environmental Information Processing
+4. Cellular Processes
+5. Organismal Systems
+6. Human Diseases
+7. Drug Development
 
