@@ -66,3 +66,6 @@ add_descriptions.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -m KO \
 add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
                     -o pathways_out/path_abun_unstrat_descrip.tsv.gz
 ```
+
+# Visualising PICRUSt2 output in STAMP (Statistical Analysis of Metagenomic Profiles)
+
