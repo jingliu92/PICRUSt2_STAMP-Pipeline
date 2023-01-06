@@ -38,7 +38,7 @@ The Enzyme Commission number (EC number) is a numerical classification scheme fo
 
 EC numbers do not specify enzymes but enzyme-catalyzed reactions. If different enzymes (for instance from different organisms) catalyze the same reaction, then they receive the same EC number.
 
-# KO (KEGG ORTHOLOGY)
+# KO (KEGG orthology)
 The KO (KEGG Orthology) database is a database of molecular functions represented in terms of functional orthologs.
 
 KEGG PATHWAY is a collection of manually drawn pathway maps representing our knowledge of the molecular interaction, reaction and relation networks for:
@@ -52,3 +52,17 @@ KEGG PATHWAY is a collection of manually drawn pathway maps representing our kno
 6. Human Diseases
 7. Drug Development
 
+# Add descriptions 
+`add_descriptions.py` is a convenience script that will add a column to your table of gene family or pathway abundances corresponding to a quick description of each functional category. 
+
+To add a description column to **E.C. number, KO, and MetaCyc pathway** abundance tables respectively:
+```
+add_descriptions.py -i EC_metagenome_out/pred_metagenome_unstrat.tsv.gz -m EC \
+                    -o EC_metagenome_out/pred_metagenome_unstrat_descrip.tsv.gz
+
+add_descriptions.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -m KO \
+                    -o KO_metagenome_out/pred_metagenome_unstrat_descrip.tsv.gz
+
+add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
+                    -o pathways_out/path_abun_unstrat_descrip.tsv.gz
+```
