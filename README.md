@@ -86,7 +86,17 @@ pip install STAMP
 
 conda install -n stamp -c asmeurer pyqt=4
 
+STAMP
 ```
-Type `stamp` on terminal to start STAMP
+
+# Reopen STAMP
+```
+conda activate stamp
+STAMP
+```
+
+# Data Analysis on STAMP
+```
+```
 
 
