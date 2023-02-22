@@ -72,7 +72,20 @@ add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
 ## Intall STAMP on MacOS
 ```
 conda deactivate
-conda install -c bioconda stamp
+conda create -n stamp python=2.7
+
+conda activate stamp
+
+pip install numpy
+
+pip install cython
+
+pip install biom-format==2.1.7
+
+pip install STAMP
+
+conda install -n stamp -c asmeurer pyqt=4
+
 ```
 Type `stamp` on terminal to start STAMP
 
