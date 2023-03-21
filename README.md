@@ -81,6 +81,7 @@ pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -o KEGG_
 add_descriptions.py -i KEGG_pathways_out/path_abun_unstrat.tsv.gz \
                     -o KEGG_pathways_out/path_abun_unstrat_descrip.tsv.gz \
                     --custom_map_table KO_metagenome_out/KEGG_pathways_info.tsv
+```
 
 # Visualising PICRUSt2 output in STAMP 
 
