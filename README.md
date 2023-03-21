@@ -76,13 +76,10 @@ metagenome_pipeline.py -i ../../qiime2_2023/feature_table/feature_table.txt -m m
 ```
 
 ```
-pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_contrib.tsv.gz -o KEGG_pathways_out --no_regroup --map KO_metagenome_out/KEGG_pathways_to_KO.csv
-```
+pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -o KEGG_pathways_out --no_regroup --map KO_metagenome_out/KEGG_pathways_to_KO.txt
 
-pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -o KEGG_pathways_out --no_regroup --custom_map_table KO_metagenome_out/KEGG_pathways_info.tsv
-
-add_descriptions.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz \
-                    -o KO_metagenome_out/pred_metagenome_unstrat_descrip.tsv.gz \
+add_descriptions.py -i KEGG_pathways_out/path_abun_unstrat.tsv.gz \
+                    -o KEGG_pathways_out/path_abun_unstrat_descrip.tsv.gz \
                     --custom_map_table KO_metagenome_out/KEGG_pathways_info.tsv
 
 # Visualising PICRUSt2 output in STAMP 
