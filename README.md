@@ -106,7 +106,8 @@ STAMP
 
 # Reopen STAMP
 ```
-conda activate stamp
+conda activate stamp \
+
 STAMP
 ```
 
