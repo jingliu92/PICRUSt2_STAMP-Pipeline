@@ -76,7 +76,7 @@ metagenome_pipeline.py -i ../../qiime2_2023/feature_table/feature_table.txt -m m
 ```
 
 ```
-pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_contrib.tsv -o KEGG_pathways_out --no_regroup --map KO_metagenome_out/KEGG_pathways_to_KO.csv
+pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_contrib.tsv.gz -o KEGG_pathways_out --no_regroup --map KO_metagenome_out/KEGG_pathways_to_KO.csv
 ```
 
 pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -o KEGG_pathways_out --no_regroup --custom_map_table KO_metagenome_out/KEGG_pathways_info.tsv
