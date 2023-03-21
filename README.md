@@ -71,7 +71,7 @@ add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
 Download defult file from Github repository (https://github.com/picrust/picrust2/tree/master/picrust2/default_files/description_mapfiles), put it under `KO_metagenome_out` folder
 
 ```
-pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz -o KEGG_pathways_out --no_regroup --map KO_metagenome_out/KEGG_pathways_to_KO.csv
+pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_contrib.tsv -o KEGG_pathways_out --no_regroup --map KO_metagenome_out/KEGG_pathways_to_KO.csv
 
 ```
 
