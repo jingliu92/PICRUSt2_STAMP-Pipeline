@@ -67,6 +67,11 @@ add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
                     -o pathways_out/path_abun_unstrat_descrip.tsv.gz
 ```
 
+# Add Pathway level 3
+
+```
+pathway_pipeline.py -i KO_metagenome_out/pred_metagenome_unstrat.tsv.gz \
+                       -o KEGG_pathways_out --no_regroup --map picrust2/picrust2/default_files/pathway_mapfiles/KEGG_pathways_to_KO.tsv
 # Visualising PICRUSt2 output in STAMP 
 
 ## Intall STAMP on MacOS
