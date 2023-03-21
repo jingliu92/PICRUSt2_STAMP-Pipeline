@@ -106,13 +106,15 @@ STAMP
 
 # Reopen STAMP
 ```
-conda activate stamp \
+conda activate stamp 
 
 STAMP
 ```
 
 # Data Analysis on STAMP
-```
-```
+
+1. Import data (Sample_list and path_abun_unstrat_descrip.tsv)
+<img width="1135" alt="Screen Shot 2023-03-21 at 6 07 57 PM" src="https://user-images.githubusercontent.com/100873921/226762075-c44b219a-9b03-4e2b-ae7e-4e64654cf0d4.png">
+
 
 
