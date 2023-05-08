@@ -98,13 +98,13 @@ echo "PATH=$PATH:`pwd`/EasyMicrobiome/linux:`pwd`/EasyMicrobiome/script" >> ~/.b
 ```
 
 # level 1 and Level2
+unzip pred_metagenome_unstrat.tsv.gz, and change the name to KEGG.KO.txt
 ```
  python3 ../EasyMicrobiome/script/summarizeAbundance.py \
  -i KEGG.KO.txt \
  -m ../EasyMicrobiome/kegg/KO1-4.txt \
  -c 2,3,4 -s ',+,+,' -n raw \
  -o KEGG
- 
  ````
 
 # Visualising PICRUSt2 output in STAMP 
