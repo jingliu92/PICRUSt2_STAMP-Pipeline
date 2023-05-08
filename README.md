@@ -83,6 +83,30 @@ add_descriptions.py -i KEGG_pathways_out/path_abun_unstrat.tsv.gz \
                     --custom_map_table KO_metagenome_out/KEGG_pathways_info.tsv
 ```
 
+# Add Pathway level 1 and 2
+Since there is no level 1 and level 2 database in the picrust2 github repo, we will use outside scripts that written by other researchers,
+
+## Script file package download (Put the EasyMicrobiome outside `KO_metagenome_out`)
+```{Python}
+git clone https://github.com/YongxinLiu/EasyMicrobiome
+
+# add executable permission to a Linux command
+chmod +x EasyMicrobiome/linux/*
+
+# add a software to the environment variable in Linux
+echo "PATH=$PATH:`pwd`/EasyMicrobiome/linux:`pwd`/EasyMicrobiome/script" >> ~/.bashrc
+```
+
+# level 1 and Level2
+```
+ python3 ../EasyMicrobiome/script/summarizeAbundance.py \
+ -i KEGG.KO.txt \
+ -m ../EasyMicrobiome/kegg/KO1-4.txt \
+ -c 2,3,4 -s ',+,+,' -n raw \
+ -o KEGG
+ 
+ ````
+
 # Visualising PICRUSt2 output in STAMP 
 
 ## Intall STAMP on MacOS
