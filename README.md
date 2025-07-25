@@ -208,6 +208,12 @@ project/
 
 ---
 
+## References
+1. https://github.com/YongxinLiu/EasyMicrobiome
+2. https://huttenhower.sph.harvard.edu/picrust/
+3. Douglas, G.M., Maffei, V.J., Zaneveld, J.R. et al. PICRUSt2 for prediction of metagenome functions. Nat Biotechnol 38, 685–688 (2020). https://doi.org/10.1038/s41587-020-0548-6
+
+---
 ## Contact
 
 For questions or contributions, feel free to open an issue or submit a pull request.
