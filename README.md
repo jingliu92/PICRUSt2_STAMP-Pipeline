@@ -14,7 +14,7 @@ PICRUSt2 (Phylogenetic Investigation of Communities by Reconstruction of Unobser
 ## Workflow Overview 
 ![image](https://user-images.githubusercontent.com/100873921/210913670-b41bc185-d372-45f7-ad2e-0ef5a97c9bf5.png)
 
-Check the detailed information from [The Huttenhower Lab] (https://huttenhower.sph.harvard.edu/picrust/)
+Check the detailed information from [The Huttenhower Lab](https://huttenhower.sph.harvard.edu/picrust/).
 
 ---
 
