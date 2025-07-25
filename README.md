@@ -18,14 +18,14 @@ Check the detailed information from [The Huttenhower Lab](https://huttenhower.sp
 
 ---
 
-## 🔧 Installation
+## Installation
 
 ```bash
-conda create -n picrust2 -c bioconda -c conda-forge picrust2=2.3.0_b
+conda create -n picrust2 -c bioconda -c conda-forge picrust2=2.4.1
 conda activate picrust2
 ```
 
-### ⚠️ Troubleshooting
+### Troubleshooting
 
 To fully remove old Conda installations:
 
@@ -40,23 +40,23 @@ vi ~/.bash_profile
 
 ---
 
-## ▶️ Run the Pipeline
+## Run the Pipeline
 
 ```bash
 picrust2_pipeline.py \
   -s Qiime2/rep_seqs/dna-sequences.fasta \
   -i feature_table/feature_table.txt \
-  -o picrust3 \
+  -o picrust2 \
   -p 8
 ```
 
-### 🗂 Input:
-- `dna-sequences.fasta`: Representative ASV sequences  
+### Input:
+- `dna-sequences.fasta`: Representative ASV sequences from QIIME2
 - `feature_table.txt`: ASV abundance table (BIOM TSV format)
 
 ---
 
-## 📁 Key Outputs
+## Key Outputs
 
 | Folder               | Description |
 |----------------------|-------------|
@@ -71,7 +71,7 @@ Each includes:
 
 ---
 
-## 📖 Functional Annotation
+## Functional Annotation
 
 ### Enzyme Commission (EC)
 - EC numbers classify enzyme-catalyzed reactions.
@@ -83,7 +83,7 @@ Each includes:
 
 ---
 
-## 🧩 Add Functional Descriptions
+## Add Functional Descriptions
 
 ```bash
 add_descriptions.py -i EC_metagenome_out/pred_metagenome_unstrat.tsv.gz -m EC \
@@ -98,7 +98,7 @@ add_descriptions.py -i pathways_out/path_abun_unstrat.tsv.gz -m METACYC \
 
 ---
 
-## ➕ Add KEGG Pathway Level 3
+## Add KEGG Pathway Level 3
 
 1. Download KEGG mapping files from:  
    [PICRUSt2 description maps](https://github.com/picrust/picrust2/tree/master/picrust2/default_files/description_mapfiles)
@@ -122,7 +122,7 @@ add_descriptions.py -i KEGG_pathways_out/path_abun_unstrat.tsv.gz \
 
 ---
 
-## 🔢 Add KEGG Level 1 & 2 with EasyMicrobiome
+## Add KEGG Level 1 & 2 with EasyMicrobiome
 
 ```bash
 git clone https://github.com/YongxinLiu/EasyMicrobiome
@@ -172,12 +172,13 @@ STAMP
 ### Import Data
 - Use `path_abun_unstrat_descrip.tsv` (remove `KO` column if needed)
 - Prepare `Sample_list` for group metadata
+<img width="1135" alt="Screen Shot 2023-03-21 at 6 07 57 PM" src="https://user-images.githubusercontent.com/100873921/226762075-c44b219a-9b03-4e2b-ae7e-4e64654cf0d4.png">
 
 ---
 
 ## 🧪 Example Dataset
 
-Try a quick test using our [example dataset](link-to-your-example-data):
+Try a quick test using this [example dataset](link-to-your-example-data):
 
 ```bash
 picrust2_pipeline.py \
@@ -194,8 +195,7 @@ picrust2_pipeline.py \
 ```text
 project/
 ├── Qiime2/
-│   └── rep_seqs.fasta
-├── feature_table/
+│   ├── rep_seqs.fasta
 │   └── feature_table.txt
 ├── picrust3/
 │   ├── EC_metagenome_out/
@@ -208,7 +208,7 @@ project/
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions or contributions, feel free to open an issue or submit a pull request.
 
