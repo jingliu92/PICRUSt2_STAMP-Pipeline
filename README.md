@@ -1,4 +1,4 @@
-# 🧬 PICRUSt2 Functional Prediction Pipeline
+# PICRUSt2 + STAMP for Microbial 16S rRNA Gene Sequencing
 
 ![Conda](https://img.shields.io/conda/vn/bioconda/picrust2?label=PICRUSt2&logo=anaconda)
 ![License](https://img.shields.io/github/license/picrust/picrust2)
@@ -7,13 +7,14 @@
 ![GitHub forks](https://img.shields.io/github/forks/picrust/picrust2)
 ![GitHub issues](https://img.shields.io/github/issues/picrust/picrust2)
 
-PICRUSt2 (Phylogenetic Investigation of Communities by Reconstruction of Unobserved States) is a powerful tool to predict the functional composition of metagenomes from 16S rRNA marker gene data.
+PICRUSt2 (Phylogenetic Investigation of Communities by Reconstruction of Unobserved States) is a powerful tool to predict the functional composition of metagenomes from 16S rRNA gene data.
 
 ---
 
-## 🔁 Workflow Overview
+## Workflow Overview 
+![image](https://user-images.githubusercontent.com/100873921/210913670-b41bc185-d372-45f7-ad2e-0ef5a97c9bf5.png)
 
-![PICRUSt2 Flowchart](images/picrust2_flowchart.png) <!-- Replace with your actual image path -->
+Check the detailed information from [The Huttenhower Lab] (https://huttenhower.sph.harvard.edu/picrust/)
 
 ---
 
