@@ -1,4 +1,4 @@
-# PICRUSt2 + STAMP for Microbial 16S rRNA Gene Sequencing
+# PICRUSt2 + STAMP for Microbial 16S rRNA Gene Data
 
 ![Conda](https://img.shields.io/conda/vn/bioconda/picrust2?label=PICRUSt2&logo=anaconda)
 ![License](https://img.shields.io/github/license/picrust/picrust2)
